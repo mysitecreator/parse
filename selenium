@@ -1,0 +1,12 @@
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+driver = webdriver.Chrome(executable_path="C:\chromedriver.exe")
+
+driver.get('http://allbazar.uz/cat-ovoshchi_i154/')
+
+button = driver.find_element(By.ID, 'category-show-more-products-button')
+time.sleep(3)
+button.click()
+driver.close()
